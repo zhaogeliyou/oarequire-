@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1; user-scalable=no;">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/muiv3/dist/css/mui.min.css">
+</head>
+<style>
+    html,
+    body,
+    .content {
+        height: 100%;
+        background-color: #fff;
+        font-family: -apple-system, "Helvetica Neue", Roboto, sans-serif;
+    }
+    
+    .tabbar {
+        width: 100%;
+        height: 52px;
+        text-align: center;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        z-index: 998;
+    }
+    
+    .tabbar div {
+        flex: 1;
+    }
+    
+    .tabbar div P {
+        margin-bottom: 0;
+    }
+    
+    .tabbar div P:first-child {
+        margin-top: 5px;
+    }
+    
+    .active,
+    .active p {
+        color: deepskyblue;
+    }
+    /*home主页面样式*/
+    
+    #offCanvasContentScroll {
+        background-color: #fff;
+    }
+    
+    .mui-table-view {
+        background-color: rgb(244, 244, 244);
+    }
+    
+    .mui-table-view-cell:after {
+        left: 0;
+    }
+    
+    .mui-table-view-cell b {
+        margin-right: 5px;
+    }
+    
+    .mui-table-view-cell p {
+        color: rgb(79, 223, 112);
+    }
+    
+    .mui-table-view-cell p span {
+        margin-left: 3px;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <div class="content"></div>
+    <!--底部tabbar布局-->
+    <div class="tabbar">
+        <div class="home active">
+            <p class="mui-icon mui-icon-home"></p>
+            <p>主页</p>
+        </div>
+        <div class="message">
+            <p class="mui-icon mui-icon-chatboxes"></p>
+            <p>消息</p>
+        </div>
+        <div class="application">
+            <p class="mui-icon mui-icon-flag"></p>
+            <p>应用</p>
+        </div>
+    </div>
+</body>
+<script src='./node_modules/requirejs/require.js' data-main='main'></script>
+
+</html>

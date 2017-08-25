@@ -1,0 +1,19 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "art-template": "^4.12.1",
+    "jquery": "^3.2.1",
+    "muiv3": "^3.3.0",
+    "requirejs": "^2.3.5",
+    "requirejs-text": "^2.0.15"
+  }
+}
