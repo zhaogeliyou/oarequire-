@@ -1,6 +1,6 @@
-define(['text!template/home/homeListTpl.html', 'mui'], function(homeListTpl, mui) {
+define(['text!template/message/messageListTpl.html', 'mui'], function(messageListTpl, mui) {
     return function() {
-        $(".content").html(homeListTpl)
+        $(".content").html(messageListTpl)
         mui.init({
             swipeback: true
         });
@@ -40,23 +40,26 @@ define(['text!template/home/homeListTpl.html', 'mui'], function(homeListTpl, mui
                     'popGesture': 'none'
                 });
             });
-            // offCanvasWrapper[0].addEventListener('hidden', function(e) { //菜单关闭完成事件
-            //     plus.webview.currentWebview().setStyle({
-            //         'popGesture': 'close'
-            //     });
-            // });
         }
 
 
-        // mui('body').on('tap', '.mui-content', function() {
-        if (mui('.mui-off-canvas-wrap').offCanvas().isShown('left')) {
-            alert(9)
-            mui('.mui-off-canvas-wrap').offCanvas().close();
-        }
-
-        // })
-        document.querySelectorAll(".mui-title")[0].addEventListener("tap", function() {
-            mui('#action-sheet-wrapper').popover('toggle');
-        })
+        // 选项卡支持滚动
+        // (function($) {
+        //     $('#scroll').scroll({
+        //         indicators: true //是否显示滚动条
+        //     });
+        //     var segmentedControl = document.getElementById('segmentedControl');
+        //     $('.mui-input-group').on('change', 'input', function() {
+        //         if (this.checked) {
+        //             var styleEl = document.querySelector('input[name="style"]:checked');
+        //             var colorEl = document.querySelector('input[name="color"]:checked');
+        //             if (styleEl && colorEl) {
+        //                 var style = styleEl.value;
+        //                 var color = colorEl.value;
+        //                 segmentedControl.className = 'mui-segmented-control' + (style ? (' mui-segmented-control-' + style) : '') + ' mui-segmented-control-' + color;
+        //             }
+        //         }
+        //     });
+        // })(mui);
     }
 })

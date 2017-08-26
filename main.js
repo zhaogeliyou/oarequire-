@@ -13,7 +13,7 @@ require.config({
         }
     }
 })
-require(['./src/js/home/homeList', 'jquery'], function(homeList) {
+require(['./src/js/home/homeList', './src/js/message/messageList', './src/js/application/applicationList', 'jquery'], function(homeList, messageList, applicationList) {
     $(".tabbar").on("click", "div", function() {
         // 给tarbar点击处添加.active设置字体颜色
         $(this).addClass("active").siblings().removeClass("active")
@@ -25,12 +25,12 @@ require(['./src/js/home/homeList', 'jquery'], function(homeList) {
 
         // 将message模块添加到content容器中
         else if ($(this).hasClass("message")) {
-            $(".content").html("message")
+            messageList();
         }
 
         // 将application模块添加到content容器中
         else if ($(this).hasClass("application")) {
-            $(".content").html("application")
+            applicationList();
         }
     })
 

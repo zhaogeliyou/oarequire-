@@ -1,0 +1,86 @@
+<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+    <!--左边侧滑菜单部分-->
+    <aside id="offCanvasSideLeft" class="mui-off-canvas-left">
+        <div id="offCanvasSideScrollLeft" class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div class="title">开始菜单</div>
+                <dl>
+                    <dt>电子邮件</dt>
+                    <dd><span>发送邮件</span></dd>
+                </dl>
+
+                <dl>
+                    <dt>事务办理</dt>
+                    <dd><span>新建事务</span><span>已建事务</span><span>代办事务</span></dd>
+                    <dd><span>已办事务</span><span>查阅事务</span></dd>
+                </dl>
+            </div>
+        </div>
+    </aside>
+
+    <!--右边侧滑菜单部分-->
+    <aside id="offCanvasSideRight" class="mui-off-canvas-right">
+        <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div class="title">应用扩展</div>
+                <ul class="mui-table-view application-slide-right-list">
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right"><span class="mui-icon mui-icon-weibo"></span>新浪网</a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right"><span class="mui-icon mui-icon-weibo"></span>腾讯网</a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right"><span class="mui-icon mui-icon-weibo"></span>百度网</a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right"><span class="mui-icon mui-icon-weibo"></span>淘宝网</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!--主界面部分-->
+    <div class="mui-inner-wrap application-main">
+        <header class="mui-bar mui-bar-nav">
+            <a href="#offCanvasSideLeft" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
+            <a id="offCanvasBtn" href="#offCanvasSideRight" class="mui-icon mui-action-menu mui-icon-more mui-pull-right"></a>
+            <h1 id="applicationTitle" class="mui-title">网络办公</h1>
+        </header>
+        <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <dl>
+                    <dt><span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>信息中心</dt>
+                    <dd><span>浏览信息</span><span>发布信息</span><span>管理信息</span></dd>
+                </dl>
+                <dl>
+                    <dt><span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>电子邮件</dt>
+                    <dd><span>发送邮件</span><span>接收邮件</span><span>草稿箱</span><span>已发邮件</span><span>归档邮件</span></dd>
+                </dl>
+                <dl>
+                    <dt><span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>个人文档</dt>
+                    <dd><span>管理文档</span><span>浏览文档</span></dd>
+                </dl>
+                <dl>
+                    <dt><span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>部门文档</dt>
+                    <dd><span>管理文档</span><span>浏览文档</span></dd>
+                </dl>
+                <dl>
+                    <dt><span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>只是管理</dt>
+                    <dd><span>管理文档</span><span>浏览文档</span><span>添加文档</span></dd>
+                </dl>
+                <dl>
+                    <dt><span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>工作表单</dt>
+                    <dd><span>已建表单</span><span>待办表单</span><span>已办表单</span></dd>
+                </dl>
+                <dl>
+                    <dt><span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>事务办理</dt>
+                    <dd><span>新建事务</span><span>已建事务</span><span>待办事务</span><span>已办事务</span><span>查阅事务</span></dd>
+                </dl>
+
+            </div>
+        </div>
+        <!-- off-canvas backdrop -->
+        <div id="backdrop" class="mui-off-canvas-backdrop"></div>
+    </div>
+</div>

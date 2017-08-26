@@ -1,8 +1,8 @@
-define(['text!template/home/homeListTpl.html', 'mui'], function(homeListTpl, mui) {
+define(['text!template/application/applicationListTpl.html', 'mui'], function(applicationListTpl, mui) {
     return function() {
-        $(".content").html(homeListTpl)
+        $(".content").html(applicationListTpl)
         mui.init({
-            swipeback: true
+            swipeback: false
         });
         //侧滑容器父节点
         var offCanvasWrapper = mui('#offCanvasWrapper');
@@ -46,17 +46,5 @@ define(['text!template/home/homeListTpl.html', 'mui'], function(homeListTpl, mui
             //     });
             // });
         }
-
-
-        // mui('body').on('tap', '.mui-content', function() {
-        if (mui('.mui-off-canvas-wrap').offCanvas().isShown('left')) {
-            alert(9)
-            mui('.mui-off-canvas-wrap').offCanvas().close();
-        }
-
-        // })
-        document.querySelectorAll(".mui-title")[0].addEventListener("tap", function() {
-            mui('#action-sheet-wrapper').popover('toggle');
-        })
     }
 })

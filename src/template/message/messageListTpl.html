@@ -1,0 +1,147 @@
+<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+    <!--左边侧滑菜单部分-->
+    <aside id="offCanvasSideLeft" class="mui-off-canvas-left">
+        <div id="offCanvasSideScrollLeft" class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div class="title">消息菜单</div>
+                <dl>
+                    <dt>电子邮件</dt>
+                    <dd><span>发送邮件</span></dd>
+                </dl>
+
+                <dl>
+                    <dt>事务办理</dt>
+                    <dd><span>新建事务</span><span>已建事务</span><span>代办事务</span></dd>
+                    <dd><span>已办事务</span><span>查阅事务</span></dd>
+                </dl>
+            </div>
+        </div>
+    </aside>
+
+    <!--右边侧滑菜单部分-->
+    <aside id="offCanvasSideRight" class="mui-off-canvas-right">
+        <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div class="title">消息设置</div>
+                <ul>
+                    <li><span class="mui-icon mui-icon-compose"></span>记事本</li>
+                    <li><span class="mui-icon mui-icon-compose"></span>收支账本</li>
+                    <li><span class="mui-icon mui-icon-compose"></span>通讯录</li>
+                    <li><span class="mui-icon mui-icon-compose"></span>任务提醒</li>
+                    <li><span class="mui-icon mui-icon-compose"></span>邮编区号</li>
+                    <li><span class="mui-icon mui-icon-compose"></span>好友设置</li>
+                    <li><span class="mui-icon mui-icon-compose"></span>快捷方式</li>
+                    <li><span class="mui-icon mui-icon-compose"></span>帮助文档</li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!--主界面部分-->
+    <div id="home" class="mui-inner-wrap">
+        <header class="mui-bar mui-bar-nav">
+            <a href="#offCanvasSideLeft" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
+            <a id="offCanvasBtn" href="#offCanvasSideRight" class="mui-icon mui-action-menu mui-icon-more mui-pull-right"></a>
+            <!--<div class="mui-content">-->
+            <div id="segmentedControl" class="mui-segmented-control">
+                <a class="mui-control-item mui-active" href="#messageTab">
+				消息
+			</a>
+                <a class="mui-control-item" href="#userTab">
+				用户
+			</a>
+            </div>
+        </header>
+        <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div id="messageTab" class="mui-control-content mui-active">
+                    <div id="scroll" class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <ul class="mui-table-view">
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-1
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-2
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-3
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-4
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-5
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-6
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-7
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-8
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-9
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-10
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-11
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-12
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-13
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-14
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-15
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-16
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-17
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-18
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-19
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    第一个选项卡子项-20
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="userTab" class="mui-control-content">
+                    <ul class="mui-table-view">
+                        <li>单位
+                            <p class="mui-pull-right">1 <span class="mui-icon mui-icon-loop"></span></p>
+                        </li>
+                        <li>部门
+                            <p class="mui-pull-right">1 <span class="mui-icon mui-icon-loop"></span></p>
+                        </li>
+                        <li>*搜索结果
+                            <p class="mui-pull-right">0 <span class="mui-icon mui-icon-minus"></span></p>
+                        </li>
+                    </ul>
+                    <div class="mui-input-row mui-search">
+                        <span class="mui-icon mui-icon-search"></span>
+                        <input type="search" class="mui-input-clear" placeholder="请输入姓名或者其简拼搜索">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- off-canvas backdrop -->
+        <div id="backdrop" class="mui-off-canvas-backdrop"></div>
+    </div>
+</div>

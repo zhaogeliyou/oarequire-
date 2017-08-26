@@ -1,0 +1,300 @@
+  dl,
+  ul,
+  p,
+  li,
+  dd,
+  dt,
+  input {
+      margin: 0;
+      padding: 0;
+  }
+  
+  ul,
+  dl,
+  li {
+      list-style: none;
+  }
+  
+  html,
+  body,
+  .content {
+      height: 100%;
+      background-color: #fff;
+      font-family: -apple-system, "Helvetica Neue", Roboto, sans-serif;
+  }
+  /*底部tabbar样式*/
+  
+  .tabbar {
+      width: 100%;
+      height: 52px;
+      text-align: center;
+      display: flex;
+      background: rgb(248, 248, 248);
+      border-top: 1px solid dimgray;
+      position: fixed;
+      bottom: 0;
+      z-index: 998;
+  }
+  
+  .tabbar div {
+      flex: 1;
+  }
+  
+  .tabbar div P {
+      margin-bottom: 0;
+  }
+  
+  .tabbar div P:first-child {
+      margin-top: 5px;
+  }
+  
+  .active,
+  .active p {
+      color: deepskyblue;
+  }
+  /*home主页面样式*/
+  
+  .mui-off-canvas-wrap .mui-bar {
+      box-shadow: 0 1px 5px gray;
+  }
+  
+  #offCanvasContentScroll {
+      background-color: #fff;
+  }
+  
+  .mui-table-view {
+      background-color: rgb(244, 244, 244);
+  }
+  
+  .mui-table-view-cell:after {
+      left: 0;
+  }
+  
+  .mui-table-view-cell b {
+      margin-right: 5px;
+  }
+  
+  .mui-table-view-cell p {
+      color: rgb(79, 223, 112);
+  }
+  
+  .mui-table-view-cell p span {
+      margin-left: 3px;
+      font-size: 18px;
+  }
+  /*首页左侧菜单*/
+  
+  #offCanvasSideLeft,
+  #offCanvasSideRight {
+      background: #fff;
+  }
+  
+  #offCanvasSideLeft .title,
+  #offCanvasSideRight .title {
+      position: relative;
+      z-index: 2;
+      height: 45px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 45px;
+      background: rgb(248, 248, 248);
+      box-shadow: 0 1px 5px gray;
+  }
+  
+  #offCanvasSideLeft dt {
+      height: 45px;
+      line-height: 45px;
+      padding-left: 16px;
+      font-size: 14px;
+      background: rgb(244, 244, 244);
+      position: relative;
+  }
+  
+  #offCanvasSideLeft dt:after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0px;
+      height: 1px;
+      content: '';
+      -webkit-transform: scaleY(.5);
+      transform: scaleY(.5);
+      background-color: #c8c7cc;
+  }
+  
+  #offCanvasSideLeft dd {
+      position: relative;
+      height: 50px;
+      width: 100%;
+      line-height: 50px;
+      text-align: center;
+      font-size: 12px;
+      color: rgb(127, 173, 255);
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  #offCanvasSideLeft dd::after,
+  #offCanvasSideRight ul li::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0px;
+      height: 1px;
+      content: '';
+      -webkit-transform: scaleY(.5);
+      transform: scaleY(.5);
+      background-color: #c8c7cc;
+  }
+  
+  #offCanvasSideLeft dd span {
+      flex: 1;
+  }
+  /*首页左侧菜单*/
+  
+  #offCanvasSideRight ul {
+      padding-left: 16px;
+  }
+  
+  #offCanvasSideRight ul li {
+      position: relative;
+      width: 100%;
+      font-size: 16px;
+      height: 51px;
+      line-height: 51px;
+  }
+  
+  #offCanvasSideRight ul li span {
+      margin-right: 5px;
+  }
+  /*主页主界面*/
+  
+  #home h1 {
+      color: rgb(104, 158, 254);
+  }
+  
+  #home a {
+      font-weight: block;
+      color: rgb(34, 34, 34);
+  }
+  /*底部滑动菜单action-sheet-wrapper*/
+  
+  #action-sheet-wrapper {
+      background: #fff;
+  }
+  /*message页样式*/
+  
+  .mui-segmented-control .mui-control-item {
+      line-height: 30pX;
+      width: 100px;
+  }
+  
+  .mui-scroll {
+      height: 100%;
+      overflow: scroll;
+  }
+  /*消息选项卡*/
+  
+  #messageTab {
+      height: 100%;
+      overflow: scroll;
+  }
+  /*用户选项卡*/
+  
+  #userTab ul {
+      padding-left: 16px;
+  }
+  
+  #userTab li {
+      height: 44px;
+      line-height: 44px;
+  }
+  
+  #userTab ul li:nth-child(2) {
+      padding-left: 16px;
+  }
+  
+  #userTab li p {
+      color: rgb(0, 122, 255)
+  }
+  
+  #userTab li span {
+      margin-right: 15px;
+      font-size: 14px;
+      color: rgb(0, 122, 255)
+  }
+  
+  #userTab .mui-search {
+      position: relative;
+  }
+  
+  #userTab .mui-search input {
+      padding-left: 22px;
+      height: 44px;
+      text-align: left;
+      background: #fff;
+      border-radius: 0;
+      border-left: 10px solid gray;
+      border-right: 10px solid gray;
+      border-top: 5px solid gray;
+      border-bottom: 5px solid gray;
+      font-size: 14px;
+  }
+  
+  #userTab .mui-search span {
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      font-size: 14px;
+  }
+  /*application模块样式*/
+  
+  #applicationTitle {
+      width: 100px;
+      background: rgb(72, 138, 255);
+      color: #fff;
+      font-size: 12px;
+      border-radius: 0 5px 5px 0;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      line-height: 32px;
+  }
+  
+  .application-main dl dt {
+      height: 44px;
+      line-height: 44px;
+      padding-left: 18px;
+      background: rgb(244, 244, 244);
+      font-size: 16px;
+  }
+  
+  .application-main dl dt span {
+      font-size: 18px;
+      margin-right: 5px;
+  }
+  
+  .application-main dl dd {
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid rgb(237, 237, 237);
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      color: rgb(132, 177, 255);
+  }
+  
+  .application-main dl dd span {
+      flex: 1;
+      font-size: 12px;
+  }
+  
+  .mui-scroll {
+      padding-bottom: 96px;
+  }
+  
+  #offCanvasSideRight .application-slide-right-list li {
+      height: 46px;
+      line-height: 24px;
+  }
