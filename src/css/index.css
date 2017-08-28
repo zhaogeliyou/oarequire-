@@ -190,7 +190,7 @@
   }
   
   .mui-scroll {
-      height: 100%;
+      /*height: 100%;*/
       overflow: scroll;
   }
   /*消息选项卡*/
@@ -291,7 +291,8 @@
   }
   
   .mui-scroll {
-      padding-bottom: 96px;
+      min-height: 500px;
+      padding-bottom: 55px;
   }
   
   #offCanvasSideRight .application-slide-right-list li {

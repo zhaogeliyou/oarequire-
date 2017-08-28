@@ -1,6 +1,10 @@
-define(['text!template/home/homeListTpl.html', 'mui'], function(homeListTpl, mui) {
+define(['text!template/home/homeListTpl.html', '../home/email/sendEmail', 'mui'], function(homeListTpl, sendEmail, mui) {
     return function() {
-        $(".content").html(homeListTpl)
+        $(".content").html(homeListTpl);
+        $(".send-email").on("tap", function() {
+            offCanvasWrapper.offCanvas('close');
+            sendEmail();
+        })
         mui.init({
             swipeback: true
         });
@@ -26,13 +30,15 @@ define(['text!template/home/homeListTpl.html', 'mui'], function(homeListTpl, mui
 
         // classList.add('mui-slide-in');
 
-        //主界面和左侧滑菜单界面均支持区域滚动；
-        mui('#offCanvasSideScrollLeft').scroll();
+        //左侧滑菜单界面支持区域滚动；
         mui('#offCanvasSideScrollLeft').scroll();
 
-        //主界面和右侧滑菜单界面均支持区域滚动；
+        //右侧滑菜单界面支持区域滚动；
         mui('#offCanvasSideScrollRight').scroll();
-        mui('#offCanvasSideScrollRight').scroll();
+        mui('#offCanvasSideScroll').scroll();
+
+        //主界面支持区域滚动；
+        mui('#offCanvasContentScroll').scroll();
         //实现ios平台原生侧滑关闭页面；
         if (mui.os.plus && mui.os.ios) {
             mui.plusReady(function() { //5+ iOS暂时无法屏蔽popGesture时传递touch事件，故该demo直接屏蔽popGesture功能
@@ -58,5 +64,6 @@ define(['text!template/home/homeListTpl.html', 'mui'], function(homeListTpl, mui
         document.querySelectorAll(".mui-title")[0].addEventListener("tap", function() {
             mui('#action-sheet-wrapper').popover('toggle');
         })
+
     }
 })

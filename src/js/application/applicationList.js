@@ -26,13 +26,14 @@ define(['text!template/application/applicationListTpl.html', 'mui'], function(ap
 
         // classList.add('mui-slide-in');
 
-        //主界面和左侧滑菜单界面均支持区域滚动；
-        mui('#offCanvasSideScrollLeft').scroll();
+        //左侧滑菜单界面支持区域滚动；
         mui('#offCanvasSideScrollLeft').scroll();
 
-        //主界面和右侧滑菜单界面均支持区域滚动；
+        //右侧滑菜单界面支持区域滚动；
         mui('#offCanvasSideScrollRight').scroll();
-        mui('#offCanvasSideScrollRight').scroll();
+
+        //主界面支持区域滚动；
+        mui('#offCanvasContentScroll').scroll();
         //实现ios平台原生侧滑关闭页面；
         if (mui.os.plus && mui.os.ios) {
             mui.plusReady(function() { //5+ iOS暂时无法屏蔽popGesture时传递touch事件，故该demo直接屏蔽popGesture功能
@@ -45,6 +46,10 @@ define(['text!template/application/applicationListTpl.html', 'mui'], function(ap
             //         'popGesture': 'close'
             //     });
             // });
+        }
+
+        if (mui('.mui-off-canvas-wrap').offCanvas().isShown('left')) {
+            mui('.mui-off-canvas-wrap').offCanvas().close();
         }
     }
 })

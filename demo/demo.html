@@ -3,247 +3,116 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Hello MUI</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-    <link rel="stylesheet" href="./dist/css/mui.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <!--标准mui.css-->
+    <link rel="stylesheet" href="../node_modules/muiv3/dist/css/mui.css">
+    <!--App自定义的css-->
+    <!--<link rel="stylesheet" type="text/css" href="../css/app.css" />-->
+    <link href="../node_modules/muiv3/plugin/picker/css/mui.picker.css" rel="stylesheet" />
+    <link href="../node_modules/muiv3/plugin/picker/css/mui.poppicker.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />-->
     <style>
-        .mui-card .mui-control-content {
-            padding: 10px;
+        .mui-btn {
+            font-size: 16px;
+            padding: 8px;
+            margin: 3px;
         }
         
-        .mui-control-content {
-            height: 150px;
+        h5.mui-content-padded {
+            margin-left: 3px;
+            margin-top: 20px !important;
+        }
+        
+        h5.mui-content-padded:first-child {
+            margin-top: 12px !important;
+        }
+        
+        .ui-alert {
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 16px;
         }
     </style>
 </head>
 
 <body>
-    <div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
-        <!--左边侧滑菜单部分-->
-        <aside id="offCanvasSideLeft" class="mui-off-canvas-left home-slidebar-left">
-            <div id="offCanvasSideScrollLeft" class="mui-scroll-wrapper">
-                <div class="mui-scroll">
-                    <div class="title">开始菜单</div>
-                    <dl>
-                        <dt>电子邮件</dt>
-                        <dd><span>发送邮件</span></dd>
-                    </dl>
-
-                    <dl>
-                        <dt>事务办理</dt>
-                        <dd><span>新建事务</span><span>已建事务</span><span>代办事务</span></dd>
-                        <dd><span>已办事务</span><span>查阅事务</span></dd>
-                    </dl>
-                </div>
-            </div>
-        </aside>
-
-        <!--右边侧滑菜单部分-->
-        <aside id="offCanvasSideRight" class="mui-off-canvas-right">
-            <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
-                <div class="mui-scroll">
-                    <div class="title">办公工具</div>
-                    <ul>
-                        <li><span class="mui-icon mui-icon-compose"></span>记事本</li>
-                        <li><span class="mui-icon mui-icon-compose"></span>收支账本</li>
-                        <li><span class="mui-icon mui-icon-compose"></span>通讯录</li>
-                        <li><span class="mui-icon mui-icon-compose"></span>任务提醒</li>
-                        <li><span class="mui-icon mui-icon-compose"></span>邮编区号</li>
-                        <li><span class="mui-icon mui-icon-compose"></span>好友设置</li>
-                        <li><span class="mui-icon mui-icon-compose"></span>快捷方式</li>
-                        <li><span class="mui-icon mui-icon-compose"></span>帮助文档</li>
-                    </ul>
-                </div>
-            </div>
-        </aside>
-        <!--主界面部分-->
-        <div id="home" class="mui-inner-wrap">
-            <header class="mui-bar mui-bar-nav">
-                <a href="#offCanvasSideLeft" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
-                <a id="offCanvasBtn" href="#offCanvasSideRight" class="mui-icon mui-action-menu mui-icon-more mui-pull-right"></a>
-                <h1 class="mui-title">div模式右滑菜单<span class="mui-icon mui-icon-arrowthindown"></span></h1>
-            </header>
-            <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
-                <div class="mui-scroll">
-                    <div style="padding: 10px 10px;">
-                        <div id="segmentedControl" class="mui-segmented-control">
-                            <a class="mui-control-item mui-active" href="#item1">
-				待办公文（8）
-			</a>
-                            <a class="mui-control-item" href="#item2">
-				已办公文
-			</a>
-                            <a class="mui-control-item" href="#item3">
-				全部公文
-			</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div id="item1" class="mui-control-content mui-active">
-                            <div id="scroll" class="mui-scroll-wrapper">
-                                <div class="mui-scroll">
-                                    <ul class="mui-table-view">
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-1
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-2
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-3
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-4
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-5
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-6
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-7
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-8
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-9
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-10
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-11
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-12
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-13
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-14
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-15
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-16
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-17
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-18
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-19
-                                        </li>
-                                        <li class="mui-table-view-cell">
-                                            第一个选项卡子项-20
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="item2" class="mui-control-content">
-                            <ul class="mui-table-view">
-                                <li class="mui-table-view-cell">
-                                    第二个选项卡子项-1
-                                </li>
-                                <li class="mui-table-view-cell">
-                                    第二个选项卡子项-2
-                                </li>
-                                <li class="mui-table-view-cell">
-                                    第二个选项卡子项-3
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="item3" class="mui-control-content">
-                            <ul class="mui-table-view">
-                                <li class="mui-table-view-cell">
-                                    第三个选项卡子项-1
-                                </li>
-                                <li class="mui-table-view-cell">
-                                    第三个选项卡子项-2
-                                </li>
-                                <li class="mui-table-view-cell">
-                                    第三个选项卡子项-3
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- off-canvas backdrop -->
-            <div id="backdrop" class="mui-off-canvas-backdrop"></div>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">picker（选择器）</h1>
+    </header>
+    <div class="mui-content">
+        <div class="mui-content-padded">
+            <h5 class="mui-content-padded">原生 SELECT</h5>
+            <select class="mui-btn mui-btn-block">
+					<option value="item-1">item-1</option>
+					<option value="item-2">item-2</option>
+					<option value="item-3">item-3</option>
+					<option value="item-4">item-4</option>
+					<option value="item-5">item-5</option>
+				</select>
+            <br />
+            <p>原生 SELECT（选择框）在不同的设备上UI可能会有差异，并且不支持多级联动(多个 SELECT 可实现，但较麻烦)，故mui封装了picker组件，参见如下示例。</p>
+            <h5 class="mui-content-padded">普通示例</h5>
+            <button id='showUserPicker' class="mui-btn mui-btn-block" type='button'>一级选择示例 ...</button>
+            <div id='userResult' class="ui-alert"></div>
+            <h5 class="mui-content-padded">级联示例</h5>
+            <button id='showCityPicker' class="mui-btn mui-btn-block" type='button'>二级联动示例 ...</button>
+            <div id='cityResult' class="ui-alert"></div>
+            <button id='showCityPicker3' class="mui-btn mui-btn-block" type='button'>三级联动示例 ...</button>
+            <div id='cityResult3' class="ui-alert"></div>
         </div>
     </div>
-    <script src="./dist/js/mui.js"></script>
+    <script src="../node_modules/muiv3/dist/js/mui.js"></script>
+    <!--<script src="../js/mui.picker.min.js"></script>-->
+    <script src="../node_modules/muiv3/plugin/picker/js/mui.picker.js"></script>
+    <script src="../node_modules/muiv3/plugin/picker/js/mui.poppicker.js"></script>
     <script>
-        $(".content").html(homeListTpl)
-        mui.init({
-            swipeback: true
-        });
-        //侧滑容器父节点
-        var offCanvasWrapper = mui('#offCanvasWrapper');
-        //主界面容器
-        var offCanvasInner = offCanvasWrapper[0].querySelector('.mui-inner-wrap');
-        //左菜单容器
-        var offCanvasSide = document.getElementById("offCanvasSideLeft");
-        // 右菜单容器
-        var offCanvasSideRight = document.getElementById("offCanvasSideRight");
-        if (!mui.os.android) {
-            // document.getElementById("move-togger").classList.remove('mui-hidden');
-            var spans = document.querySelectorAll('.android-only');
-            for (var i = 0, len = spans.length; i < len; i++) {
-                spans[i].style.display = "none";
-            }
-        }
-        //移动效果是否为整体移动
-        var moveTogether = false;
-        //侧滑容器的class列表，增加.mui-slide-in即可实现菜单移动、主界面不动的效果；
-        var classList = offCanvasWrapper[0].classList;
-
-        // classList.add('mui-slide-in');
-
-        //主界面和左侧滑菜单界面均支持区域滚动；
-        mui('#offCanvasSideScrollLeft').scroll();
-        mui('#offCanvasSideScrollLeft').scroll();
-
-        //主界面和右侧滑菜单界面均支持区域滚动；
-        mui('#offCanvasSideScrollRight').scroll();
-        mui('#offCanvasSideScrollRight').scroll();
-        //实现ios平台原生侧滑关闭页面；
-        if (mui.os.plus && mui.os.ios) {
-            mui.plusReady(function() { //5+ iOS暂时无法屏蔽popGesture时传递touch事件，故该demo直接屏蔽popGesture功能
-                plus.webview.currentWebview().setStyle({
-                    'popGesture': 'none'
-                });
+        (function($, doc) {
+            $.init();
+            $.ready(function() {
+                //普通示例
+                var userPicker = new $.PopPicker();
+                userPicker.setData([{
+                    value: 'ywj',
+                    text: '董事长 叶文洁'
+                }, {
+                    value: 'aaa',
+                    text: '总经理 艾AA'
+                }, {
+                    value: 'lj',
+                    text: '罗辑'
+                }, {
+                    value: 'ymt',
+                    text: '云天明'
+                }, {
+                    value: 'shq',
+                    text: '史强'
+                }, {
+                    value: 'zhbh',
+                    text: '章北海'
+                }, {
+                    value: 'zhy',
+                    text: '庄颜'
+                }, {
+                    value: 'gyf',
+                    text: '关一帆'
+                }, {
+                    value: 'zhz',
+                    text: '智子'
+                }, {
+                    value: 'gezh',
+                    text: '歌者'
+                }]);
+                var showUserPickerButton = doc.getElementById('showUserPicker');
+                var userResult = doc.getElementById('userResult');
+                showUserPickerButton.addEventListener('tap', function(event) {
+                    userPicker.show(function(items) {
+                        userResult.innerText = JSON.stringify(items[0]);
+                    });
+                }, false);
             });
-            // offCanvasWrapper[0].addEventListener('hidden', function(e) { //菜单关闭完成事件
-            //     plus.webview.currentWebview().setStyle({
-            //         'popGesture': 'close'
-            //     });
-            // });
-        }
-
-
-        // mui('body').on('tap', '.mui-content', function() {
-        if (mui('.mui-off-canvas-wrap').offCanvas().isShown('left')) {
-            alert(9)
-            mui('.mui-off-canvas-wrap').offCanvas().close();
-        }
-
-        // })
-        document.querySelectorAll(".mui-title")[0].addEventListener("tap", function() {
-            mui('#action-sheet-wrapper').popover('toggle');
-        })
+        })(mui, document);
     </script>
 </body>
 
