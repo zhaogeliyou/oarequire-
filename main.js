@@ -4,12 +4,27 @@ require.config({
         mui: "./node_modules/muiv3/dist/js/mui",
         jquery: './node_modules/jquery/dist/jquery',
         text: './node_modules/requirejs-text/text',
-        template: 'src/template'
+        template: 'src/template',
+        widget: './src/assets/fileUpload-master/src/main/webapp/js/jquery.ui.widget',
+        iframeTransport: './src/assets/fileUpload-master/src/main/webapp/js/jquery.iframe-transport',
+        fileUpload: './src/assets/fileUpload-master/src/main/webapp/js/jquery.fileupload'
     },
     shim: {
-        "myCustomMod": {
+        "mui": {
             deps: [],
             exports: "mui"
+        },
+        "widget": {
+            deps: ['jquery'],
+            exports: "widget"
+        },
+        "iframeTransport": {
+            deps: ['jquery'],
+            exports: "iframeTransport"
+        },
+        "fileUpload": {
+            deps: ['widget'],
+            exports: "fileUpload"
         }
     }
 })
