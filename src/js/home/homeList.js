@@ -1,9 +1,41 @@
-define(['text!template/home/homeListTpl.html', '../home/email/sendEmail', 'mui'], function(homeListTpl, sendEmail, mui) {
+define(['text!template/home/homeListTpl.html', '../home/email/sendEmail', '../home/transaction/newTransaction', '../home/notepad/notepad', '../home/budget/budget', '../home/addressBook/addressBookList', '../home/taskReminder/taskReminder', 'mui'], function(homeListTpl, sendEmail, newTransaction, notepad, budget, addressBookList, taskReminder, mui) {
     return function() {
-        $(".content").html(homeListTpl);
-        $(".send-email").on("tap", function() {
+        $(".content").html(homeListTpl)
+            // 左侧侧滑菜单
+            // 发送邮件
+            .on("tap", '.send-email', function() {
+                offCanvasWrapper.offCanvas('close');
+                sendEmail();
+            })
+            // 新建事务
+            .on('tap', '.newTransaction', function() {
+                offCanvasWrapper.offCanvas('close');
+                newTransaction()
+            })
+
+        // 右侧侧滑菜单
+        // 记事本
+        .on('tap', '.notepad', function() {
             offCanvasWrapper.offCanvas('close');
-            sendEmail();
+            notepad();
+        })
+
+        // 收支账本
+        .on('tap', '.budget', function() {
+            offCanvasWrapper.offCanvas('close');
+            budget()
+        })
+
+        // 通讯录
+        .on('tap', '.address-book', function() {
+            offCanvasWrapper.offCanvas('close');
+            addressBookList();
+        })
+
+        // 任务提醒
+        .on('tap', '.task-reminder', function() {
+            offCanvasWrapper.offCanvas('close');
+            taskReminder();
         })
         mui.init({
             swipeback: true

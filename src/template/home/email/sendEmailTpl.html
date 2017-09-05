@@ -1,0 +1,35 @@
+<div id="sendEmailContent">
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-icon-closeempty mui-pull-left email-send"></a>
+        <a class="mui-icon mui-icon-checkmarkempty mui-pull-right send">发送</a>
+        <h1 class="mui-title">发送邮件</h1>
+    </header>
+    <div class="emailContent">
+        <form id="upload" method="post" enctype="multipart/form-data" action="/src//js/home/email/upload.php">
+            <div class="recipient email-input">
+                <label>收件人</label>
+                <input type="text" name="" value="" readonly>
+                <b class="mui-icon mui-icon-plusempty mui-pull-right addRecipient"></b>
+            </div>
+
+            <div class="theme email-input">
+                <label>主题</label>
+                <input type="text" name="" value="">
+                <b class="mui-icon mui-icon-paperclip mui-pull-right uploadBtn"></b>
+                <input type="file" multiple="multiple" style="display:none">
+            </div>
+            <ul>
+
+            </ul>
+            <div class="emailContent">
+                <button type="button" class="bold">bold</button>
+                <button type="button" class="italic">Italic</button>
+                <button type="button" class="h1">h1</button>
+                <button type="button" class="h2">h2</button>
+                <button type="button" class="link">link</button>
+                <div class="article-content" id="content">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

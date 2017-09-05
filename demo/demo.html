@@ -1,26 +1,23 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>jQuery File Upload Example</title>
-
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/muiv3/dist/css/mui.min.css">
 </head>
 
 <body>
-    <button id='upload'>上传</button>
-    <h1></h1>
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <!--<script src="js/vendor/jquery.ui.widget.js"></script>
-    <script src="js/jquery.iframe-transport.js"></script>-->
-    <script src="./jquery.fileupload.js"></script>
-    <script>
-        $('#jqxFileUpload').jqxFileUpload({
-            uploadUrl: 'upload.php',
-            fileInputName: 'fileInput',
-            autoUpload: true
-        });
-    </script>
+    <form class="mui-input-group">
+        <div class="mui-input-row mui-search mui-plus-visible">
+            <label>快速删除</label>
+            <input id="search" type="search" class="mui-input-speech mui-input-clear" placeholder="请输入内容">
+        </div>
+    </form>
 </body>
 
 </html>
+<script type="text/javascript" src="../node_modules/muiv3/dist/js/mui.js"></script>
+<script>
+    console.log(mui)
+</script>

@@ -1,0 +1,73 @@
+<div id="budget">
+
+    <header class="top">
+        <span class="close mui-icon mui-icon-closeempty mui-pull-left"></span>
+        <h3>收支账本</h3>
+        <span class="addBudget mui-pull-right mui-icon mui-icon-plus">&nbsp;新建</span>
+    </header>
+    <div class="content">
+        <table>
+            <tbody>
+                <tr>
+                    <td>日期</td>
+                    <td>日期</td>
+                    <td>日期</td>
+                    <td>支出</td>
+                </tr>
+                <tr>
+                    <td>共0项</td>
+                    <td>余额：0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+        <form>
+            <button class='time'>
+                <span>从</span>
+                <input type="text" name="" value="2017-01-01" readonly>
+                </button>
+            <button>
+                <span>到</span>
+                <input type="text" name="" value="2017-12-31" readonly>
+            </button>
+            <div class="mui-input-row mui-search">
+                <!--<span class="mui-icon mui-icon-search"></span>-->
+                <input type="search" class="mui-input-clear" placeholder="请输入姓名或者其简拼搜索">
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--右滑菜单-->
+<div class="addBudgetMenu">
+    <div class="top">
+        <span class="menuClose mui-icon mui-icon-closeempty mui-pull-left"></span>
+        <h3>新建账单</h3>
+        <span class="menuSave mui-pull-right mui-icon mui-icon-plus">&nbsp;保存</span>
+    </div>
+    <div class="menuContent">
+        <form class="mui-input-group">
+            <div class="mui-input-row">
+                <label>日期</label>
+                <input type="text" class="slideDate" value="2017-09-02 07:31" readonly>
+            </div>
+            <div class="mui-input-row">
+                <label>项目</label>
+                <input type="text" class="mui-input-clear" placeholder="请输入内容">
+            </div>
+            <div class="mui-input-row">
+                <label>收入</label>
+                <input type="number" class="mui-input-clear">
+            </div>
+            <div class="mui-input-row">
+                <label>支出</label>
+                <input type="number" class="mui-input-clear">
+            </div>
+            <div class="mui-input-row">
+                <label>详情</label>
+                <textarea rows="" cols=""></textarea>
+            </div>
+        </form>
+    </div>
+</div>

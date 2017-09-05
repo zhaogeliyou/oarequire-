@@ -1,0 +1,134 @@
+<div id="taskReminder">
+
+    <header class="top">
+        <span class="close mui-icon mui-icon-closeempty mui-pull-left"></span>
+        <h3>任务提醒</h3>
+        <span class="addBudget mui-pull-right mui-icon mui-icon-plus">&nbsp;新建</span>
+    </header>
+    <div class="content">
+        <table>
+            <tr>
+                <th>任务名称</th>
+                <th>终止日期</th>
+                <th>天数</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>共0项</td>
+                    <td>2017-08-08</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--任务弹窗按钮-->
+        <div class="process">
+            <span>共1项</span>
+            <span class="process-select">未开始</span>
+        </div>
+
+        <form>
+            <button class='startTime'>
+                <span>从</span>
+                <input type="text" name="" value="2017-01-01" readonly>
+                </button>
+            <button class="endTime">
+                <span>到</span>
+                <input type="text" name="" value="2017-12-31" readonly>
+            </button>
+            <div class="mui-input-row mui-search">
+                <!--<span class="mui-icon mui-icon-search"></span>-->
+                <input type="search" class="mui-input-clear" placeholder="请输入姓名或者其简拼搜索">
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--右滑菜单-->
+<div class="addBudgetMenu taskMenu">
+    <div class="top">
+        <span class="menuClose mui-icon mui-icon-closeempty mui-pull-left"></span>
+        <h3>新建任务</h3>
+        <span class="menuSave mui-pull-right mui-icon mui-icon-plus">&nbsp;保存</span>
+    </div>
+    <div class="menuContent">
+        <form class="mui-input-group">
+            <div class="mui-input-row">
+                <label>任务名称</label>
+                <input type="number" class="mui-input-clear">
+            </div>
+            <div class="mui-input-row">
+                <label>起始日期</label>
+                <input type="text" class="slideDate" value="2017-09-02" readonly>
+            </div>
+            <div class="process">
+                <label>共1项</label>
+                <span class="process-select">未开始</span>
+            </div>
+            <div class="mui-input-row">
+                <label>终止日期</label>
+                <input type="text" value="2017-09-02" readonly>
+            </div>
+            <div class="mui-input-row">
+                <label>办理情况</label>
+                <input type="button" class="mui-input-clear">
+            </div>
+            <div class="mui-input-row">
+                <label>联 系 人</label>
+                <input type="number" class="mui-input-clear">
+            </div>
+            <div class="mui-input-row">
+                <label>详情情况</label>
+                <textarea rows="" cols=""></textarea>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!--任务弹窗-->
+<div class="task-pop">
+    <h3>流程</h3>
+    <div class="radio-group">
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0001' class="current">*全部任务</label>
+            <input name="radio1" type="radio" checked>
+        </div>
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0002'>待办任务</label>
+            <input name="radio1" type="radio">
+        </div>
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0003'>未开始</label>
+            <input name="radio1" type="radio">
+        </div>
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0004'>进行中</label>
+            <input name="radio1" type="radio">
+        </div>
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0004'>等他人</label>
+            <input name="radio1" type="radio">
+        </div>
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0004'>已推迟</label>
+            <input name="radio1" type="radio">
+        </div>
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0004'>已办任务</label>
+            <input name="radio1" type="radio">
+        </div>
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0004'>已放弃</label>
+            <input name="radio1" type="radio">
+        </div>
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0004'>已完成</label>
+            <input name="radio1" type="radio">
+        </div>
+    </div>
+    <div class="promit">
+        <span class="cancle">取消</span>
+        <span class="confirm">确定</span>
+    </div>
+</div>

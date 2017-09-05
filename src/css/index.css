@@ -21,6 +21,7 @@
       height: 100%;
       background-color: #fff;
       font-family: -apple-system, "Helvetica Neue", Roboto, sans-serif;
+      overflow: hidden;
   }
   /*底部tabbar样式*/
   
@@ -33,7 +34,7 @@
       border-top: 1px solid dimgray;
       position: fixed;
       bottom: 0;
-      z-index: 998;
+      z-index: 1998;
   }
   
   .tabbar div {
@@ -298,4 +299,29 @@
   #offCanvasSideRight .application-slide-right-list li {
       height: 46px;
       line-height: 24px;
+  }
+  /*搜索样式*/
+  
+  .mui-search {
+      position: relative;
+  }
+  
+  .mui-search input {
+      padding-left: 22px;
+      height: 44px;
+      text-align: left;
+      background: #fff;
+      border-radius: 0;
+      border-left: 10px solid gray;
+      border-right: 10px solid gray;
+      border-top: 5px solid gray;
+      border-bottom: 5px solid gray;
+      font-size: 14px;
+  }
+  
+  .mui-search span {
+      /*position: absolute;
+      left: 15px;
+      top: 15px;*/
+      font-size: 14px;
   }

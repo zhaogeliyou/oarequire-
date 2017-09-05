@@ -7,7 +7,10 @@ require.config({
         template: 'src/template',
         widget: './src/assets/fileUpload-master/src/main/webapp/js/jquery.ui.widget',
         iframeTransport: './src/assets/fileUpload-master/src/main/webapp/js/jquery.iframe-transport',
-        fileUpload: './src/assets/fileUpload-master/src/main/webapp/js/jquery.fileupload'
+        fileUpload: './src/assets/fileUpload-master/src/main/webapp/js/jquery.fileupload',
+        artEditor: './src/assets/artEditor-master/dist/index.min',
+        wangEditor: './src/assets/wangEditor-3.0.8/release/wangEditor.min',
+        picker: './node_modules/muiv3/plugin/picker/dist/js/mui.picker.min'
     },
     shim: {
         "mui": {
@@ -25,6 +28,14 @@ require.config({
         "fileUpload": {
             deps: ['widget'],
             exports: "fileUpload"
+        },
+        "artEditor": {
+            deps: ['jquery'],
+            exports: "artEditor"
+        },
+        "picker": {
+            deps: ['mui'],
+            exports: "picker"
         }
     }
 })

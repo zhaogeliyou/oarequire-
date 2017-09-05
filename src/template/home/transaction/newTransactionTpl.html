@@ -1,0 +1,66 @@
+<div id="sendEmailContent">
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-icon-closeempty mui-pull-left email-send"></a>
+        <a class="mui-icon mui-icon-checkmarkempty mui-pull-right send">保存</a>
+        <h1 class="mui-title">新建事务</h1>
+    </header>
+    <div class="emailContent transactionContent">
+        <form id="upload" method="post" enctype="multipart/form-data" action="/src//js/home/email/upload.php">
+            <div class="theme email-input">
+                <label>主题</label>
+                <input type="text" name="" value="">
+                <b class="mui-icon mui-icon-paperclip mui-pull-right uploadBtn"></b>
+                <input type="file" multiple="multiple" style="display:none">
+            </div>
+
+            <!--新建事务表格-->
+            <!--表一-->
+            <div id="body" style="overflow:auto">
+                <div class="tableContent">
+                </div>
+            </div>
+
+            <!--流程-->
+            <div class="process">
+                <span>流程</span>
+                <span class="process-select">费用报销单</span>
+            </div>
+
+            <div class="recipient email-input">
+                <label>办理</label>
+                <input type="text" name="" value="" readonly>
+                <b class="mui-icon mui-icon-plusempty mui-pull-right addRecipient"></b>
+            </div>
+            <ul>
+
+            </ul>
+        </form>
+    </div>
+</div>
+
+<!--流程弹框-->
+<div class="process-pop">
+    <h3>流程</h3>
+    <div class="radio-group">
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0001' class="current">费用报销单</label>
+            <input name="radio1" type="radio" checked>
+        </div>
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0002'>立项申请单</label>
+            <input name="radio1" type="radio">
+        </div>
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0003'>招待审批单</label>
+            <input name="radio1" type="radio">
+        </div>
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0004'>预算审批单</label>
+            <input name="radio1" type="radio">
+        </div>
+    </div>
+    <div class="promit">
+        <span class="cancle">取消</span>
+        <span class="confirm">确定</span>
+    </div>
+</div>

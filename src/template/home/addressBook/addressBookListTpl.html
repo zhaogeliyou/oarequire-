@@ -1,0 +1,219 @@
+<div id="addressBook">
+    <header class="top">
+        <span class="close mui-icon mui-icon-closeempty mui-pull-left"></span>
+        <h3>通讯录</h3>
+        <span class="addBook mui-pull-right mui-icon mui-icon-plus">&nbsp;新建</span>
+    </header>
+
+    <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <ul class="">
+                <li class="mui-table-view-cell">
+                    <div>同事
+                        <p class="mui-pull-right getUser">0 <span class="mui-icon mui-icon-loop"></span></p>
+                    </div>
+                    <div class="list-content">
+                    </div>
+                </li>
+                <li class="mui-table-view-cell">
+                    <div>朋友
+                        <p class="mui-pull-right getUser">0 <span class="mui-icon mui-icon-loop"></span></p>
+                    </div>
+                    <div class="list-content">
+                    </div>
+                </li>
+                <li class="mui-table-view-cell">
+                    <div>客户
+                        <p class="mui-pull-right getUser">0 <span class="mui-icon mui-icon-loop"></span></p>
+                    </div>
+                    <div class="list-content">
+                    </div>
+                </li>
+                <li class="mui-table-view-cell">
+                    <div>业务
+                        <p class="mui-pull-right getUser">0 <span class="mui-icon mui-icon-loop"></span></p>
+                    </div>
+                    <div class="list-content">
+                    </div>
+                </li>
+                <li class="mui-table-view-cell">
+                    <div>服务
+                        <p class="mui-pull-right getUser">0 <span class="mui-icon mui-icon-loop"></span></p>
+                    </div>
+                    <div class="list-content">
+                    </div>
+                </li>
+                <li class="mui-table-view-cell">
+                    <div>其他
+                        <p class="mui-pull-right getUser">0 <span class="mui-icon mui-icon-loop"></span></p>
+                    </div>
+                    <div class="list-content">
+                    </div>
+                </li>
+                <li class="mui-table-view-cell">*搜索结果
+                    <p class="mui-pull-right">0 <span class="mui-icon mui-icon-minus"></span></p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<!--侧滑菜单-->
+<div class="new-address-book">
+    <div class="top">
+        <span class="menu-close mui-icon mui-icon-closeempty mui-pull-left"></span>
+        <h3>新建联系人</h3>
+        <span class="addBudget mui-pull-right mui-icon mui-icon-plus">&nbsp;新建</span>
+    </div>
+    <form>
+        <div class="item-title">基本信息</div>
+        <div class="mui-input-row">
+            <label>姓名</label>
+            <input type="text" class="mui-input-clear">
+        </div>
+        <div class="mui-input-row">
+            <label>公司</label>
+            <input type="text" class="mui-input-clear">
+        </div>
+        <div class="mui-input-row">
+            <label>职务</label>
+            <input type="text" class="mui-input-clear">
+        </div>
+        <div class="mui-input-row classifyBtn">
+            <label>分类</label>
+            <input type="button" class="mui-input-clear" value="同事" readonly>
+        </div>
+        <div class="mui-input-row">
+            <label>分组</label>
+            <input type="button" class="mui-input-clear" value="单位">
+        </div>
+
+        <div class="item-title">联系方式</div>
+        <div class="mui-input-row">
+            <label>手机</label>
+            <input type="text" class="mui-input-clear">
+        </div>
+        <div class="mui-input-row">
+            <label>电话</label>
+            <input type="text" class="mui-input-clear">
+        </div>
+        <div class="mui-input-row">
+            <label>IM号</label>
+            <input type="text" class="mui-input-clear">
+        </div>
+        <div class="mui-input-row">
+            <label>邮箱</label>
+            <input type="text" class="mui-input-clear">
+        </div>
+        <div class="mui-input-row">
+            <label>地址</label>
+            <input type="text" class="mui-input-clear">
+        </div>
+
+        <div class="item-title">商务信息</div>
+        <div class="mui-input-row genderBtn">
+            <label>性别</label>
+            <input type="button" class="mui-input-clear">
+        </div>
+        <div class="mui-input-row datapop">
+            <label>生日</label>
+            <input type="text" class="mui-input-clear">
+        </div>
+        <div class="mui-input-row datapop">
+            <label>联系</label>
+            <input type="text" class="mui-input-clear">
+        </div>
+        <div class="mui-input-row">
+            <label>爱好</label>
+            <input type="text" class="mui-input-clear">
+        </div>
+        <div class="mui-input-row">
+            <label>简介</label>
+            <input type="text" class="mui-input-clear">
+        </div>
+
+        <div class="item-title">保密信息</div>
+        <div class="mui-input-row recipient">
+            <label>管理</label>
+            <input type="button" class="mui-input-clear">
+        </div>
+        <div class="mui-input-row recipient">
+            <label>浏览</label>
+            <input type="text" class="mui-input-clear">
+        </div>
+        <div class="mui-input-row">
+            <label>证件</label>
+            <input type="text" class="mui-input-clear">
+        </div>
+        <div class="mui-input-row">
+            <label>账号</label>
+            <input type="text" class="mui-input-clear">
+        </div>
+        <div class="mui-input-row">
+            <label>备注</label>
+            <input type="text" class="mui-input-clear">
+        </div>
+    </form>
+</div>
+
+<!--分类弹窗-->
+<div class="classify pop-up">
+    <h3>流程</h3>
+    <div class="radio-group">
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0001' class="current">同事</label>
+            <input name="radio1" type="radio" checked>
+        </div>
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0002'>朋友</label>
+            <input name="radio1" type="radio">
+        </div>
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0003'>客户</label>
+            <input name="radio1" type="radio">
+        </div>
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0004'>业务</label>
+            <input name="radio1" type="radio">
+        </div>
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0004'>服务</label>
+            <input name="radio1" type="radio">
+        </div>
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0004'>其他</label>
+            <input name="radio1" type="radio">
+        </div>
+    </div>
+    <div class="promit">
+        <span class="cancle">取消</span>
+        <span class="confirm">确定</span>
+    </div>
+</div>
+
+
+<!--性别弹窗-->
+<div class="gender pop-up">
+    <h3>流程</h3>
+    <div class="radio-group">
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0001' class="current">男</label>
+            <input name="radio1" type="radio" checked>
+        </div>
+        <div class="mui-input-row mui-radio mui-left">
+            <label code='0002'>女</label>
+            <input name="radio1" type="radio">
+        </div>
+    </div>
+    <div class="promit">
+        <span class="cancle">取消</span>
+        <span class="confirm">确定</span>
+    </div>
+</div>
+
+<!--搜索框-->
+<div class="mui-input-row mui-search addressBook-search">
+    <!--<span class="mui-icon mui-icon-search"></span>-->
+    <input type="search" class="mui-input-clear" placeholder="请输入姓名或者其简拼搜索">
+</div>
